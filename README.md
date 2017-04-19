@@ -1,6 +1,6 @@
 # PinyinSearcher
 
-```Maven
+```XML
 <dependency>
     <groupId>com.belerweb</groupId>
     <artifactId>pinyin4j</artifactId>
