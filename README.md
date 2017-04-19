@@ -19,7 +19,7 @@ List<Object> res = new PinyinSearcher().match("逍遥", beans, "name");
 ```
 ## 示例
 ```Java
-//构造你的实体列表（这里必须是List<Object>）
+//构造你的实体列表(这里必须是List<Object>)
 List<Object> beans = new ArrayList<Object>(); 
 beans.add(new YourBean(1, "李逍遥", "四川省成都市锦江区"));
 beans.add(new YourBean(2, "李晓姚", "四川省成都市"));
@@ -35,19 +35,24 @@ beans.add(new YourBean(10, null, "河北省安新县"));
 //调用拼音搜索器
 PinyinSearcher searcher = new PinyinSearcher();
 List<Object> res_name = searcher.match("xy", beans, "name"); 
-List<Object> res_address = searcher.match("成d", beans, "address");
+List<Object> res_address = searcher.match("sichuans", beans, "address");
 
-//得到搜索结果
+//得到搜索结果(从这里就可以写自己的业务了)
 for(Object object : res_name) {
     YourBean bean = (YourBean) object; //取得匹配name的bean
-    Your code goes here.
+    System.out.println(bean.getName());
 }
 for(Object object : res_address) {
     YourBean bean = (YourBean) object; //取得匹配address的bean
-    Your code goes here.
+    System.out.println(bean.getAddress());
 }
 ```
 ## 示例结果
-name:
-
-address:
+### name:
+李逍遥
+李晓姚
+### address:
+四川省成都市锦江区
+四川省成都市
+四川省自贡市
+四川省南充市阆中
