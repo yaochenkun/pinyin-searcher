@@ -11,12 +11,11 @@
 </dependency>
 ```
 ## 使用方法
+1. 调用PinyinSearcher构造搜索器
+2. 调用match(关键字, 实体列表, 实体字段名)进行搜索
+3. 返回匹配上的实体列表
 ```Java
-//"逍遥"：用户输入的关键字
-//beans：你的实体列表
-//"name"：你的实体属性字段名称，作为待搜索的列
-//res：搜索到的你的实体列表
-List<Object> res = searcher.match("逍遥", beans, "name");
+List<Object> res = new PinyinSearcher().match("逍遥", beans, "name");
 ```
 ## 示例
 ```Java
