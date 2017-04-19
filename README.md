@@ -3,7 +3,7 @@
 ## 配置
 1. 引入pinyin_searcher.jar
 2. 引入依赖jar包：pinyin4j-2.5.0.jar
-   或
+或采用Maven
 ```XML
 <dependency>
     <groupId>com.belerweb</groupId>
