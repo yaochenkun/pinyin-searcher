@@ -66,7 +66,7 @@ for(Object object : res_address) {
 * 汉字 + 拼音前缀：李xi -> 李逍遥、李晓姚、李xiaoyao
 * 全非汉字前缀：sun -> 阳sunny光、阳sunnyguang、阳sun光、阳sunny光好
 * 全非汉字后缀：nny -> 阳sunny光、阳sunnyguang、阳sunny光好
-* 汉字 + 非汉字前缀 ：阳sun -> 阳sunny光、阳sunnyguang、阳sun光、阳sunny光好
+* 汉字 + 非汉字串前缀 ：阳sun -> 阳sunny光、阳sunnyguang、阳sun光、阳sunny光好
 * 完整非汉字串 + 拼音前缀：sunnygu -> 阳sunny光、阳sunnyguang、阳sunny光好
 * 完整非汉字串 + 拼音首字母：sunnygh -> 阳sunny光好
 * 非汉字后缀 + 汉字：nny光 -> 阳sunny光、阳sunny光好
