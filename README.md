@@ -15,7 +15,7 @@
 2. 调用match(关键字,  待搜的实体列表,  待搜实体字段名)进行搜索
 3. 返回匹配上的实体列表
 ```Java
-List<Object> res = new PinyinSearcher().match("逍遥", beans, "name");
+List<Object> res = new PinyinSearcher().match("逍yao", beans, "name");
 ```
 ## 示例
 ```Java
