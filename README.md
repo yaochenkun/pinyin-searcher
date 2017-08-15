@@ -1,13 +1,24 @@
 # PinyinSearcher
 一个支持以汉字、拼音首字母、拼音前缀、非汉字串前缀、非汉字串后缀等及他们混合进行关键字搜索的jar包。
 ## 配置
-1. 引入pinyin_searcher.jar
-2. 引入依赖jar包：pinyin4j-2.5.0.jar 或 采用Maven
+1. 引入依赖jar包：pinyin4j-2.5.0.jar 或 采用Maven
 ```XML
 <dependency>
     <groupId>com.belerweb</groupId>
     <artifactId>pinyin4j</artifactId>
     <version>2.5.0</version>
+</dependency>
+```
+2. 引入pinyin_searcher.jar
+```Shell
+#进入pinyin_searcher.jar所在目录
+mvn install:install-file -Dfile=pinyin_searcher.jar -DgroupId=org.ken -DartifactId=searcher -Dversion=1.0.0 -Dpackaging=jar
+```
+```XML
+<dependency>
+    <groupId>org.ken</groupId>
+    <artifactId>searcher</artifactId>
+    <version>1.0.0</version>
 </dependency>
 ```
 ## 使用方法
